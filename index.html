@@ -1,93 +1,359 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Al Baqi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Everlasting house of Education">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">     -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.js"></script>
   </head>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bgimg {
-  background-image: url('forestbridge.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
-
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <img src="logo.jpeg" width="100" alt="">
+<style>
+
+.slider-items{height: 75vh;background-size: cover;background-repeat: no-repeat;background-position: center;}
+
+.bg-img-1 {
+    background-image: url(images/slide1.jpg);
+} 
+.bg-img-2 {
+  background-image: url(images/slide2.jpg);
+}
+.bg-img-3 {
+  background-image: url(images/slide3.jpg);
+}
+.sigle-item{
+  color: white;
+}
+
+</style>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="logo.jpeg" alt="..." height="75">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#aboutUs">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+      </ul>
+    </div>
   </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
+</nav>
+
+
+  <!-- <div id="template-slideshow" class="slideshow-type-property">
+    <div class="slides">
+      <div class="slide slide-1">
+        <img src="images/slide1.jpeg" alt="">
+      </div>
+      <div class="slide slide-2">
+        <img src="images/slide2.jpeg" alt="">
+      </div>
+      <div class="slide slide-3">
+        <img src="images/slide3.jpeg" alt="">
+      </div>
+
+    </div>
+  </div>   -->
+
+
+
+	<!-- <h1 style="color: darkred; text-transform: capitalize">simple Owl carousel slider</h1> -->
+	<section class="hearo-area">
+		<!-- slider-area -->
+		<div class="slider-wrapper">
+			<div class="active-slider owl-carousel">
+				<div class="slider-items bg-img-1">
+					<div class="sigle-item">
+						<h1>Software Education</h1>
+					</div>
+				</div>
+				<div class="slider-items bg-img-2">
+					<div class="sigle-item">
+						<h1>Computer Hardware</h1>
+					</div>
+				</div>
+				<div class="slider-items bg-img-3">
+					<div class="sigle-item">
+						<h1>Advanced Networking</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- slider-area-ends -->
+	</section>
+
+
+    <div class="container" id="#aboutUs">
+        <h2 class="section-title is-gray text-center"><span>About Us</span></h2>
+        <div class="row">
+           
+          <p style="text-align:center"><span>No one knows the real estate
+            market in Adilabad better than we do. For years,
+            we&rsquo;ve been helping clients buy and sell the best
+            houses and apartments in and around Adilabad - be it to
+            those looking for a new family home or for a property
+            investment opportunity.&nbsp;</span></p>
+
+
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p> -->
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
   </div>
-</div>
+  <!-- Grid container -->
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Oct 5, 2023 15:37:25").getTime();
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="#">Al Baqi</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
 
-  // Get todays date and time
-  var now = new Date().getTime();
-  
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+    
 
 </body>
+
+
+
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+<script src="bootstrap.bundle.min.js"></script>
+
+<script>
+
+  var slideshow = $('#template-slideshow .slides');
+  
+  // loopStr = ( $(slideshow).find('.slide').length>1 ) ? true : false;
+
+  $('.active-slider').owlCarousel({
+			items: 1,
+			loop: true,
+			nav: false,
+      //animation
+      animateOut: 'fadeOut',
+      autoplay: true,
+  //icon for nav
+			navText: ['<h1> < </h1>', '<h1> > </h1>']
+		});
+
+  // slideshow.owlCarousel({
+  //   navigation:true,
+  //   paginationSpeed : 100,
+  //   goToFirstSpeed : 200,
+  //   singleItem : true,
+  //   autoHeight : true,
+  //   items: 1,
+  //   margin: 0,
+  //   lazyLoad: true,
+  //   loop: loopStr,
+  //   transitionStyle:"fade"
+  // });
+</script>
+  
 </html>
